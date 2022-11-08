@@ -14,6 +14,8 @@ for row in file:
     x.append(Coordinates[0])
     y.append(Coordinates[1])
 
+file.close() #закриття файлу
+
 #переведення масивів у масиви пакету numpy
 NumpyX = np.array(x, 'int16') 
 NumpyY = np.array(y, 'int16')
